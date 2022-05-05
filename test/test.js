@@ -8,7 +8,10 @@ const combat = require('../src/combat');
 describe('Combat', function() {
   describe('#Constructor', function() {
     it('should not throw exception', function() {
-      combat().round.should.equal(combat().round);
+      let c = new combat.Combat();
+      should.exist(c);
+      should.not.equal(c, null);
+      c.round.should.equal(1);
     });
   });
 });

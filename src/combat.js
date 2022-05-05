@@ -1,10 +1,7 @@
 function Combat(){
-    if (!(this instanceof Combat)) {
-        return new Combat();
-    }
-
 }
 
-Combat.prototype.round = 0;
+Combat.prototype.round = 1;
 
-module.exports = Combat;
+
+exports.Combat = Combat;
